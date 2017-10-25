@@ -8,6 +8,6 @@ cd ../autoscripts
 
 ./start_all_in_order.sh
 
-docker exec -ti `docker ps | grep "spark-master" | awk '{print $1}'` bash -c "mkdir -p /home/develop/spark_datas/spark_events"
+docker exec -ti `docker ps | grep "spark-master" | awk '{print $1}'` bash -c "mkdir -p /home/hadoop/spark_datas/spark_events"
 
 docker exec -it spark-master bash
