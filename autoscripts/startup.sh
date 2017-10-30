@@ -39,6 +39,7 @@ sudo service docker restart
 docker pull  hughntes/spark-master:0.1
 docker pull hughntes/spark-slave:0.1
 
-chmod a+x ./*
+
 cd docker-spark-5nodes/autoscripts/
+chmod a+x ./*
 ./start-spark-firstonce.sh
