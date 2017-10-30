@@ -34,7 +34,7 @@ sudo usermod -a -G docker $USER
 sudo gpasswd -a ${USER} docker
 sudo service docker restart
 #如果没有效果执行下列命令
-newgrp - docker
+#newgrp - docker
 
 docker pull  hughntes/spark-master:0.1
 docker pull hughntes/spark-slave:0.1
