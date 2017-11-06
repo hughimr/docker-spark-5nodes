@@ -74,6 +74,8 @@ export SPARK_MASTER_IP=spark-master
 export SPARK_WORKER_MEMORY=1g
 export HADOOP_CONF_DIR=/usr/local/hadoop-2.6.5/etc/hadoop
 
+#解决native lib找不到的问题
+export LD_LIBRARY_PATH=/usr/local/hadoop/lib/native
 #################################
 #
 # enable spark history
