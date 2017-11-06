@@ -34,11 +34,5 @@ sudo usermod -a -G docker $USER
 sudo gpasswd -a ${USER} docker
 sudo service docker restart
 #如果没有效果执行下列命令
-#newgrp - docker
+newgrp - docker
 
-docker pull  hughntes/spark:1.0
-
-
-cd docker-spark-5nodes/autoscripts/
-chmod a+x ./*
-./start-spark-firstonce.sh
