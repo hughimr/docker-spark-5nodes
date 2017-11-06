@@ -1,7 +1,7 @@
 version: '3'
 services:
     spark-master:
-      image: hughntes/spark-master:0.1
+      image: hughntes/spark:1.0
       container_name: spark-master
       links:
         - spark-slave1
@@ -36,7 +36,7 @@ services:
           ipv4_address: 192.168.3.110
 
     spark-slave1:
-      image: hughntes/spark-slave:0.1
+      image: hughntes/spark:1.0
       container_name: spark-slave1
       expose:
         - "2181"
@@ -54,7 +54,7 @@ services:
       hostname: spark-slave1
 
     spark-slave2:
-      image: hughntes/spark-slave:0.1
+      image: hughntes/spark:1.0
       container_name: spark-slave2
       expose:
         - "2181"
@@ -72,7 +72,7 @@ services:
       hostname: spark-slave2
 
     spark-slave3:
-      image: hughntes/spark-slave:0.1
+      image: hughntes/spark:1.0
       container_name: spark-slave3
       expose:
         - "2181"
@@ -90,7 +90,7 @@ services:
       hostname: spark-slave3
 
     spark-slave4:
-      image: hughntes/spark-slave:0.1
+      image: hughntes/spark:1.0
       container_name: spark-slave4
       expose:
         - "2181"

@@ -36,8 +36,7 @@ sudo service docker restart
 #如果没有效果执行下列命令
 #newgrp - docker
 
-docker pull  hughntes/spark-master:0.1
-docker pull hughntes/spark-slave:0.1
+docker pull  hughntes/spark:1.0
 
 
 cd docker-spark-5nodes/autoscripts/
