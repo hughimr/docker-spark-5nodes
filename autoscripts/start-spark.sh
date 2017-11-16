@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker pull  hughntes/spark:1.0
+docker pull  hughntes/spark-hive:1.0:1.0
 
 
 cd docker-spark-5nodes/autoscripts/
